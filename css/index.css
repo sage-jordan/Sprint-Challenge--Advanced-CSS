@@ -160,6 +160,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+body {
+  align-items: flex-start;
+}
+body .navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-end;
+  background-color: #F6F7F8;
+  border-radius: 25px;
+  opacity: 0.9;
+}
 .navigation {
   font-size: 1.5rem;
 }
@@ -278,6 +290,21 @@ footer {
 }
 @media (max-width:500px) {
   .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 6%;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  padding: 1%;
+  width: 6rem;
+  color: gray;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid gray;
+}
+@media (max-width:500px) {
+  .home .walk .walk-text .btn:hover {
     width: 100%;
     padding: 6%;
   }

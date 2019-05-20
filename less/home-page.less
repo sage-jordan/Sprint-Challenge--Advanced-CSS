@@ -18,7 +18,7 @@
   }
 
   .space-images {
-    display: flex;
+    .disp(flex);
     flex-wrap: wrap;
     width: 100%;
 
@@ -28,10 +28,10 @@
         margin: 20px 2%;
       }
       .sky {
-        display: none;
+        .disp(none);
       }
       .launch {
-        display: none;
+        .disp(none);
       }
     img {
       width: 28%;
@@ -60,13 +60,13 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
+    .disp(flex);
     justify-content: center;
 
     @media @mobile {
       padding: 0;
       margin: 60px 1rem;
-      flex-direction: column-reverse;
+      .dir(column-reverse);
     }
     .walk-text {
       width: 50%;
@@ -83,18 +83,13 @@
       }
 
       .btn {
-        background-color: black;
-        padding: 1%;
-        width: 6rem;
-        color: white;
-        text-align: center;
-        font-size: 1rem;
-
-        @media @mobile {
-          width: 100%;
-          padding: 6%;
+        .button(white, black);
+        &:hover {
+          .button(gray, white);
+          border: 1px solid gray;
         }
       }
+
     }
 
     .walk-img {
