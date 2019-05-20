@@ -166,16 +166,28 @@ p {
 .navigation h1 {
   font-size: 3.2rem;
   text-align: center;
+  margin-top: 2%;
 }
 .navigation nav {
   display: flex;
   flex-direction: row;
   margin-left: 20%;
 }
+@media (max-width:500px) {
+  .navigation nav {
+    margin-left: 1%;
+    flex-wrap: wrap;
+  }
+}
 .navigation nav a {
   text-decoration: none;
   color: black;
   margin: 5%;
+}
+@media (max-width:500px) {
+  .navigation nav a {
+    margin: 3%;
+  }
 }
 footer {
   color: #22283B;
