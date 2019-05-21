@@ -1,1 +1,27 @@
 // Mixins Here
+.button(@color, @background){
+    background-color: @background;
+    padding: 1%;
+    width: 6rem;
+    color: @color;
+    text-align: center;
+    font-size: 1rem;
+    
+    @media @mobile {
+        width: 100%;
+        padding: 6%;
+        }
+}
+
+.dir(@direction) {
+    flex-direction: @direction;
+}
+.disp(@display){
+    display: @display;
+}
+.sticky(){
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-end;
+}
